@@ -8,6 +8,8 @@ But have a peak at the code and it should still be useful.
 What is Flex RSS Reader
 =======================
 
+This is a simple Flex RSS Reader that uses the Adobe Cairngorm framework. During the various Flex trainings that I conducted, I found that the participants were finding it difficult to get their heads around too many things — Flex, and then Cairngorm. I used this application quite often to illustrate how Cairngorm can be used to structure Flex applications.
+
 A lot of developers are looking to understand the Cairngorm framework for developing Flex 2.0 applications. However, most get intimidated by looking at the documentation and just go away.
 
 I find that learning Cairngorm is made easier by looking at simple applications written using the Cairngorm framework.
