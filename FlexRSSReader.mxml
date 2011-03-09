@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical" 
+	xmlns:view="com.nagpals.flexrssreader.view.*"
+	xmlns:business="com.nagpals.flexrssreader.business.*"
+	xmlns:control="com.nagpals.flexrssreader.control.*"
+	>
+	
+<!-- ========================================================================== -->
+	
+	<!-- the ServiceLocator where we specify the remote services -->
+	<business:Services id="contactServices"/>
+	
+	<!-- the FrontController, containing Commands specific to this appliation -->
+	<control:RSSReaderController id="controller"/>
+	
+<!-- ========================================================================== -->
+
+	<view:MainPanel id="mainPanel"  width="800" height="600" layout="vertical" horizontalAlign="center">
+		<view:URI id="uriTextinput" paddingTop="10"/>
+		<view:List id="listDatagrid" width="750"/>
+		<view:Detail id="detailTextarea"  width="750" height="100%"/>
+	</view:MainPanel>
+	
+</mx:Application>

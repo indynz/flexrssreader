@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:DataGrid xmlns:mx="http://www.adobe.com/2006/mxml" 
+	dataProvider="{model.feedVOList}" 
+	itemClick="handleItemClick(event.currentTarget.selectedItem)"
+	fontSize="12"
+	>
+	<mx:Script>
+		<![CDATA[
+			import com.adobe.cairngorm.control.CairngormEventDispatcher;
+			import com.nagpals.flexrssreader.model.RSSReaderModelLocator;
+			import com.nagpals.flexrssreader.events.SelectItemEvent;
+			
+			[Bindable] private var model : RSSReaderModelLocator = RSSReaderModelLocator.getInstance();
+			
+			private function handleItemClick(feed:Object):void{
+				CairngormEventDispatcher.getInstance().dispatchEvent(new SelectItemEvent(feed));
+			}
+		]]>
+	</mx:Script>
+
+	<mx:columns>
+		<mx:DataGridColumn headerText="Title" dataField="title" width="450" />
+		<mx:DataGridColumn headerText="Date" dataField="pubDate"/>
+	</mx:columns>
+</mx:DataGrid>
