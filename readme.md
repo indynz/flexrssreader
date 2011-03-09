@@ -1,3 +1,10 @@
+A Note
+======
+
+This project was setup in August 2007 on Google Code. I've just moved it to GitHub. The project has not been updated since then.
+
+But have a peak at the code and it should still be useful.
+
 What is Flex RSS Reader
 =======================
 
